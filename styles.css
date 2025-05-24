@@ -1,0 +1,22 @@
+body{
+    background: linear-gradient(45deg,rgba(112, 63, 209, 1) , rgb(171, 148, 240));
+    height: 100vh;
+}
+.heading{
+    text-align: center;
+    position: relative;
+    top: 40px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 40%;
+    position: relative;
+    top: 70px;
+    left: 405px;
+    padding: 20px;
+    border-radius: 7px;
+    background: linear-gradient(180deg,rgb(219, 65, 60) , rgb(240, 231, 148));
+}
