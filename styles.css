@@ -1,47 +1,91 @@
-body{
-    background: linear-gradient(45deg,rgba(112, 63, 209, 1) , rgb(171, 148, 240));
-    height: 100vh;
+body {
+  /* background: linear-gradient(45deg,rgb(53, 220, 253) , rgb(219, 248, 251)); */
+  height: 100%;
+  color: #ebfffc;
+  background-image: url(./image/dark-sky-clouds.jpg);
+  font-family:;
 }
-.heading{
-    text-align: center;
-    position: relative;
-    top: 40px;
-    color: rgb(255, 255, 255);
-    text-shadow: 5px 5px 10px rgb(0, 0, 0);
-    font-size: 40px;
-    
+.heading {
+  text-align: center;
+  color: rgb(237, 252, 255);
+  text-shadow: 5px 5px 10px rgb(6, 239, 251);
+  font-size: 40px;
 }
-.container{
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 25%;
+  position: relative;
+  left: 496px;
+  padding: 29px 15px;
+  border-radius: 7px;
+  background: linear-gradient(145deg, rgb(32, 212, 170), rgb(6, 130, 164));
+}
+.city-name {
+  border: none;
+  padding: 10px;
+  font-size: large;
+  border-radius: 30px;
+  background-color: #ebfffc;
+  color: black;
+  margin-right: 10px;
+}
+.city-name:focus {
+  outline: none;
+}
+.btn {
+  border: none;
+  padding: 13px;
+  border-radius: 50%;
+  background-color: #ebfffc;
+  cursor: pointer;
+}
+.weather-emoji {
+  width: 150px;
+}
+.temp-display {
+  margin: 0;
+  padding: 0;
+  color: #ebfffc;
+  font-size: 40px;
+}
+.city-display {
+  color: #ebfffc;
+  margin: 5px;
+  font-size: 30px;
+}
+.col {
     display: flex;
+    flex-direction: row;
+    /* align-content: center; */
+    align-items: center;
+}
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-top: 36px;
+}
+.humidity-1,
+.wind-1 {
+    margin-top: -15px;
+}
+.humidity,
+.wind {
+  font-size: 20px;
+  
+  margin-top: 15px;
+}
+.col img{
+    width: 30px;
+    height: 30px;
+}
+.col-1{
+    display: flex;
+    margin-left: 14px;
     flex-direction: column;
-    text-align: center;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    width: 30%;
-    position: relative;
-    top: 60px;
-    left: 446px;
-    padding: 32px;
-    border-radius: 7px;
-    background: linear-gradient(180deg,rgb(219, 65, 60) , rgb(240, 231, 148));
-}
-.city-name{
-    border: none;
-    padding: 10px;
-    font-size: large;
-    border-radius: 5px;
-    background-color: rgb(224, 164, 164);
-    color: black;
-
-}
-.city-name:focus{
-    outline: none;
-}
-.btn{
-    border: none;
-    padding: 10px;
-    font-size: large;
-    border-radius: 5px;
-    background-color: rgb(36, 154, 26);
-    color: rgb(255, 255, 255);
-    cursor: pointer;
+    align-items: flex-start;
 }

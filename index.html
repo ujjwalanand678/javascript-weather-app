@@ -6,21 +6,36 @@
     <title>Weather App</title>
     <link rel="stylesheet" href="./styles.css">
     <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <h1 class="heading">Weather App</h1>
     <div class="container">
         <form action="" class="Weather-form">
             <input type="text" class="city-name" placeholder="Enter your city">
-            <button type="submit" class="btn">Get Weather</button>
+            <button type="submit" class="btn"><i class="fa-solid fa-magnifying-glass fa-lg"></i></i></button>
         </form>
         <div class="weather-card">
+            <img src="./image/clear.png" alt="" class="weather-emoji" >
+            <h1 class="temp-display">90 °F</h1>
             <h2 class="city-display">City Name</h2>
-            <p class="temp-display">90 °F</p>
-            <p class="humidity-display">Humidity : 75%</p>
-            <p class="description-weather">Clear sky</p>
-            <p class="waeather-emoji">☀️</p>
-            <p class="error-display">Please enter your city</p>
+            <div class="details">
+                <div class="col">
+                    <img src="./image/humidity.png" alt="">
+                    <div class="col-1">
+                        <p class="humidity">75%</p>
+                        <p class="humidity-1">Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="./image/wind.png" alt="">
+                    <div class="col-1">
+                        <p class="wind">15.55 km/hr</p>
+                        <p class="wind-1">Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+                       
         </div>
     </div>
 </body>
