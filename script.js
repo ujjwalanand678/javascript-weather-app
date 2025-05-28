@@ -8,7 +8,7 @@ const weatherEmoji = document.querySelector(".weather-emoji");
 const weatherContainer = document.querySelector(".container");
 const windChange = document.querySelector(".wind");
 const apiKey = "ccc8ec50064edc7a6c9bbdf754525ac8";
-const card = document.querySelector("weather-card");
+
 
 weatherForm.addEventListener("submit", async (event) => {
   event.preventDefault();
@@ -36,17 +36,38 @@ async function getWeatherData(city) {
 function displayWeatherInfo(data) {
  console.log(data);
   const {
-    name: city,
+    name,
     main: { temp, humidity },
-    weather: { description, id },
-    wind : speed
+    weather,
+    wind : {speed}
   } = data;
-  cityName.innerHTML = data.name;
-  temperature.innerHTML = (data.main.temp - "273.15").toFixed(1) + "°C";
-  humidityChange.innerHTML = data.main.humidity + '%';
-  windChange.innerHTML = data.wind.speed + "km/h";
-  
-  
+  const weatherMain = weather[0].main;
+  cityName.innerHTML = name;
+  temperature.innerHTML = (temp - "273.15").toFixed(1) + "°C";
+  humidityChange.innerHTML = humidity + '%';
+  windChange.innerHTML = speed + "m/sec";
+
+   ;
+  weatherEmoji.src = getWeatherEmoji(weatherMain); 
   
 }
-function getWeatherEmoji(weatherId) {}
+function getWeatherEmoji(main) {
+  if ((main === "Thunderstorm")) {
+    return "./image/thunderstorm.png";
+  } else if ((main === 'Drizzle')) {
+    return "./image/drizzle.png";
+  } else if ((main === 'Rain')) {
+    return "./image/rain.png";
+  } else if ((main === 'Snow')) {
+    return "./image/snow.png";
+  } else if ((main === 'Atmosphere')) {
+    return "./image/mist.png";
+  } else if (main === 'Clear') {
+    return "./image/clear.png";
+  } else if (main === 'Clouds') {
+    return "./image/clouds.png";
+  } else {
+    return "./image/clear.png"; // fallback
+  }
+}
+

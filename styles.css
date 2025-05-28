@@ -49,6 +49,7 @@ body {
   cursor: pointer;
 }
 .weather-emoji {
+  margin-top: 20px;
   width: 150px;
 }
 .temp-display {
