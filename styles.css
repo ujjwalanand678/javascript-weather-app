@@ -12,20 +12,20 @@ body {
   font-size: 40px;
 }
 .container {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    width: 28%;
-    position: relative;
-    left: 477px;
-    padding: 29px 15px;
-    border-radius: 7px;
-    background: linear-gradient(145deg, rgb(32, 212, 170), rgb(6, 130, 164));
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 28%;
+  position: relative;
+  left: 477px;
+  padding: 29px 15px;
+  border-radius: 7px;
+  background: linear-gradient(145deg, rgb(32, 212, 170), rgb(6, 130, 164));
 }
-.weather-form{
-    display: flex;
-    justify-content: center;
+.weather-form {
+  display: flex;
+  justify-content: center;
 }
 .city-name {
   border: none;
@@ -64,10 +64,10 @@ body {
   font-size: 30px;
 }
 .col {
-    display: flex;
-    flex-direction: row;
-    /* align-content: center; */
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  /* align-content: center; */
+  align-items: center;
 }
 .details {
   display: flex;
@@ -78,21 +78,34 @@ body {
 }
 .humidity-1,
 .wind-1 {
-    margin-top: -15px;
+  margin-top: -15px;
 }
 .humidity,
 .wind {
   font-size: 20px;
-  
+
   margin-top: 15px;
 }
-.col img{
-    width: 30px;
-    height: 30px;
+.col img {
+  width: 30px;
+  height: 30px;
 }
-.col-1{
-    display: flex;
-    margin-left: 14px;
-    flex-direction: column;
-    align-items: flex-start;
+.col-1 {
+  display: flex;
+  margin-left: 14px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+@media (max-width: 768px) {
+  .heading {
+    font-size: 30px;
+  }
+  .container {
+    width: 84%;
+    position: relative;
+    left: 20px;
+  }
+  .city-name {
+    font-size: 15px;
+}
 }
