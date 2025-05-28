@@ -97,15 +97,21 @@ body {
   align-items: flex-start;
 }
 @media (max-width: 768px) {
+  body {
+    font-family: monospace;
+  }
+  .city-name {
+    font-family: monospace;
+  }
   .heading {
     font-size: 30px;
   }
   .container {
     width: 84%;
     position: relative;
-    left: 20px;
+    left: 16px;
   }
   .city-name {
     font-size: 15px;
-}
+  }
 }
