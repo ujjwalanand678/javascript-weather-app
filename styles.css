@@ -3,7 +3,7 @@ body {
   height: 100%;
   color: #ebfffc;
   background-image: url(./image/dark-sky-clouds.jpg);
-  font-family: cursive;
+  font-family: monospace;
 }
 .heading {
   text-align: center;
@@ -36,7 +36,7 @@ body {
   background-color: #ebfffc;
   color: black;
   margin-right: 10px;
-  font-family: cursive;
+  font-family: monospace;
 }
 .city-name:focus {
   outline: none;
@@ -80,7 +80,7 @@ body {
 .wind-1 {
   margin-top: -15px;
 }
-.humidity,
+.humidity-0,
 .wind {
   font-size: 20px;
 
