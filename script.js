@@ -34,7 +34,7 @@ async function getWeatherData(city) {
   return await response.json();
 }
 function displayWeatherInfo(data) {
- console.log(data);
+ 
   const {
     name,
     main: { temp, humidity },
