@@ -109,7 +109,7 @@ body {
   .container {
     width: 84%;
     position: relative;
-    left: 0;
+    left: 10px;
   }
   .city-name {
     font-size: 15px;
